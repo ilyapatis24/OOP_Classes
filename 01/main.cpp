@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <locale.h>
 
 using namespace std;
@@ -55,20 +55,20 @@ int main(int argc, char** argv) {
 	double num1 = 0, num2 = 0;
 	while (true) {
 		do {
-			cout << "Ââåäèòå num1: ";
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ num1: ";
 			cin >> num1;
 			if (!calc.set_num1(num1))
 			{
-				std::cout << "Íåâåðíûé ââîä! " << std::endl;
+				std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´! " << std::endl;
 			};
 		} while (!calc.set_num1(num1));
 
 		do {
-			cout << "Ââåäèòå num2: ";
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ num2: ";
 			cin >> num2;
 			if (!calc.set_num2(num2))
 			{
-				std::cout << "Íåâåðíûé ââîä! " << std::endl;
+				std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´! " << std::endl;
 			};
 		} while (!calc.set_num2(num2));
 		cout << "num1 + num2 = " << calc.add() << endl;
