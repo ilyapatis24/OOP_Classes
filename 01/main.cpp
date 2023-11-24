@@ -4,9 +4,9 @@
 using namespace std;
 
 class Calculator {
-public:
+private:
 	double calc_number1 = 0, calc_number2 = 0;
-
+public:
 	double add() {
 		return this->calc_number1 + this->calc_number2;
 	}
