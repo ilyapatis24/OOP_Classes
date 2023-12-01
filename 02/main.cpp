@@ -25,7 +25,7 @@ public:
 };
 
 int main(int argc, char** argv) {
-    system("chcp 1251");
+    setlocale(LC_ALL, "Russian");
 	int initialCounterValue = 0;
 	string setInitialState = "";
     bool initCounter = false;
@@ -43,12 +43,12 @@ int main(int argc, char** argv) {
             initCounter = true;
         }
         else {
-            std::cout << "Вы ввели неверную команду.";
+            cout << "Вы ввели неверную команду.";
         }
     } while (!initCounter);
 
     Counter counter(initialCounterValue);
-    cout << std::endl;
+    cout << endl;
     string commandSing = "";
     bool getCommand = false;
    
