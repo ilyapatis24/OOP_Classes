@@ -25,7 +25,7 @@ public:
 };
 
 int main(int argc, char** argv) {
-    setlocale(LC_ALL, "Russian");
+    system("chcp 1251");
 	int initialCounterValue = 0;
 	string setInitialState = "";
     bool initCounter = false;
