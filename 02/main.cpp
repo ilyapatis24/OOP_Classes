@@ -26,8 +26,8 @@ public:
 
 int main(int argc, char** argv) {
     system("chcp 1251");
-	int initialCounterValue = 0;
-	string setInitialState = "";
+    int initialCounterValue = 0;
+    string setInitialState = "";
     bool initCounter = false;
     
     do {
